@@ -1,0 +1,48 @@
+<style>
+  .navbar {
+    background-color: #4CAF50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  .navbar button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+</style>
+  
+  <nav class="navbar">
+    <div class="logo"><h1>Livraria e Microsserviços</h1></div>
+    <ul>
+      <li><a href="/recomenda">Livros Recomendados</a></li>
+      <li><a href="/">Catálogo</a></li>
+      <li><a href="/carrinho" id="carrinho-link">Carrinho</a></li>
+      <li><a href="/orders" id="order-link">Pedidos</a></li>
+      <!-- <li><a href="/configuracao">Configuração</a></li> -->
+      <li><a id="admin-link" style="display:none;" href="/admin/livros">Admin</a></li>
+      <li id="welcome-msg"></li>
+      <li id="auth-buttons"></li>
+    </ul>
+  </nav>
+
+  <script src="{{ url_for('static', filename='js/js_navbar.js')}}"> </script>
+

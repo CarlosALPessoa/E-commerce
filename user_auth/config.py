@@ -1,0 +1,3 @@
+SQLALCHEMY_DATABASE_URI = 'sqlite:///users.db'  # Exemplo com SQLite
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SECRET_KEY = "cab960a6b42ec5184326eeef4abb335f"

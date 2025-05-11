@@ -1,0 +1,12 @@
+catalog/__pycache__
+catalog/.pytest_cache
+frontend/__pycache__
+payment/__pycache__
+payment/.pytest_cache
+user_auth/__pycache__
+venv
+docker-compose.yml
+user_auth/Dockerfile
+sale/Dockerfile
+catalog/Dockerfile
+frontend/Dockerfile

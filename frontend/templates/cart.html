@@ -1,0 +1,47 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>Seu carrinho</h1>
+
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+    <!-- Carrinho -->
+    <div class="cart-container" style="flex: 1;">
+        {% if error_message %}
+            <p class="error-message"style:"justify-content: left">{{ error_message|safe }}</p>
+        {% else %}
+            <h2>Pedido #{{ order_id }}</h2>
+
+            {% for item in items %}
+                <div class="cart-item">
+                    <p><strong>{{ item.prodct_title }}</strong></p>
+                    <p>Preço: R$ {{ item.prodct_price | floatformat(2) }}</p>
+                </div>
+            {% endfor %}
+
+            <div class="total">
+                Total: R$ {{ total | floatformat(2) }}
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Caixa de Pagamento -->
+    <div class="checkout-box">
+        <form onsubmit="enviarPagamento(event)">
+            <label for="forma_pagamento"><strong>Forma de Pagamento:</strong></label><br>
+            <select id="forma_pagamento" name="forma_pagamento" required>
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="boleto">Boleto</option>
+                <option value="pix">PIX</option>
+            </select><br><br>
+
+            <div class="checkout-total">
+                <strong>Total:</strong> R$ {{ total | floatformat(2) }}
+            </div><br>
+
+            <button type="submit">Fazer Pagamento</button>
+        </form>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/js_order.js')}}"></script>
+{% endblock %}

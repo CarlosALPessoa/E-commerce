@@ -1,0 +1,7 @@
+werkzeug==2.3.8
+Flask
+flask-jwt-extended
+flask-cors
+argon2-cffi
+Flask-SQLAlchemy
+secrets

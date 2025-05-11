@@ -1,0 +1,48 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>Histórico de Pedidos</h1>
+<div id="orders-container"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const userId = localStorage.getItem("user_id");
+        if (!userId) {
+            document.getElementById("orders-container").innerHTML = "<p>Usuário não logado.</p>";
+            return;
+        }
+
+        fetch(`http://localhost:8003/order_pay/${userId}`)
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('orders-container');
+
+                if (typeof data === 'string') {
+                    container.innerHTML = `<p>${data}</p>`;
+                    return;
+                }
+
+                data.forEach(order => {
+                    const div = document.createElement('div');
+                    div.className = 'order';
+
+                    // Lista de itens comprados
+                    const itemsHtml = order["Itens Comprados"].map(item =>
+                        `<li>${item.prodct_title} - R$ ${item.prodct_price.toFixed(2)}</li>`
+                    ).join("");
+
+                    div.innerHTML = `
+                        <h2>Pedido #${order["Ordem do pedido"]}</h2>
+                        <p><strong>Total:</strong> R$ ${order["Total da Compra"].toFixed(2)}</p>
+                        <ul><strong>Itens:</strong>${itemsHtml}</ul>
+                    `;
+                    container.appendChild(div);
+                });
+            })
+            .catch(error => {
+                document.getElementById('orders-container').innerHTML = `<p>Erro ao carregar pedidos: ${error}</p>`;
+            });
+    });
+</script>
+
+{% endblock %}

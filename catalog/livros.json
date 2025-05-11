@@ -1,0 +1,659 @@
+[
+    {
+      "titulo": "A Guerra dos Tronos",
+      "descricao": "Fantasia épica com intrigas e dragões.",
+      "preco": 59.9,
+      "image": "https://exemplo.com/imagens/guerra_dos_tronos.jpg",
+      "categoria": "Fantasia",
+      "qtd": 12,
+      "id": 1
+    },
+    {
+      "titulo": "O Poder do Hábito",
+      "descricao": "Como hábitos moldam nossa vida.",
+      "preco": 39.99,
+      "image": "https://exemplo.com/imagens/poder_do_habito.jpg",
+      "categoria": "Autoajuda",
+      "qtd": 25,
+      "id": 2
+    },
+    {
+      "titulo": "1984",
+      "descricao": "Distopia sobre um governo totalitário.",
+      "preco": 29.9,
+      "image": "https://exemplo.com/imagens/1984.jpg",
+      "categoria": "Ficção Científica",
+      "qtd": 18,
+      "id": 3
+    },
+    {
+      "titulo": "O Pequeno Príncipe",
+      "descricao": "Clássico infantil com reflexões filosóficas.",
+      "preco": 24.5,
+      "image": "https://exemplo.com/imagens/pequeno_principe.jpg",
+      "categoria": "Infantil",
+      "qtd": 30,
+      "id": 4
+    },
+    {
+      "titulo": "Dom Casmurro",
+      "descricao": "Romance de Machado de Assis.",
+      "preco": 19.9,
+      "image": "https://exemplo.com/imagens/dom_casmurro.jpg",
+      "categoria": "Clássico",
+      "qtd": 10,
+      "id": 5
+    },
+    {
+      "titulo": "Clean Code",
+      "descricao": "Boas práticas para escrever código limpo.",
+      "preco": 89,
+      "image": "https://exemplo.com/imagens/clean_code.jpg",
+      "categoria": "Tecnologia",
+      "qtd": 7,
+      "id": 6
+    },
+    {
+      "titulo": "Sapiens",
+      "descricao": "Uma breve história da humanidade.",
+      "preco": 44.9,
+      "image": "https://exemplo.com/imagens/sapiens.jpg",
+      "categoria": "História",
+      "qtd": 15,
+      "id": 7
+    },
+    {
+      "titulo": "A Arte da Guerra",
+      "descricao": "Estratégia militar e sabedoria oriental.",
+      "preco": 22,
+      "image": "https://exemplo.com/imagens/arte_da_guerra.jpg",
+      "categoria": "Filosofia",
+      "qtd": 20,
+      "id": 8
+    },
+    {
+      "titulo": "Duna: A Casa Atreides",
+      "descricao": "A história das famílias nobres de Duna, que controlam o planeta Arrakis e suas intrigas.",
+      "preco": 59.9,
+      "image": "https://example.com/duna.jpg",
+      "categoria": "Ficção Científica",
+      "qtd": 8,
+      "id": 9
+    },
+    {
+      "titulo": "O Fim da Infância",
+      "descricao": "Uma obra de Arthur C. Clarke sobre a evolução da humanidade sob a supervisão de seres extraterrestres.",
+      "preco": 49.9,
+      "image": "https://example.com/fim_da_infancia.jpg",
+      "categoria": "Ficção Científica",
+      "qtd": 5,
+      "id": 10
+    },
+    {
+      "titulo": "Neuromancer",
+      "descricao": "O livro que deu origem ao Cyberpunk, onde um hacker é recrutado para um golpe de alta tecnologia.",
+      "preco": 69.9,
+      "image": "https://example.com/neuromancer.jpg",
+      "categoria": "Ficção Científica",
+      "qtd": 6,
+      "id": 11
+    },
+    {
+      "titulo": "O Assassinato de Roger Ackroyd",
+      "descricao": "Um clássico de Agatha Christie, onde o detetive Hercule Poirot investiga um assassinato intrigante.",
+      "preco": 39.9,
+      "image": "https://example.com/assassinato_roger_ackroyd.jpg",
+      "categoria": "Mistério",
+      "qtd": 7,
+      "id": 12
+    },
+    {
+      "titulo": "A Garota no Trem",
+      "descricao": "Uma mulher que se vê envolvida em um mistério sobre o desaparecimento de uma jovem, em um thriller psicológico.",
+      "preco": 59.9,
+      "image": "https://example.com/garota_no_trem.jpg",
+      "categoria": "Mistério",
+      "qtd": 4,
+      "id": 13
+    },
+    {
+      "titulo": "O Silêncio dos Inocentes",
+      "descricao": "A famosa história de Hannibal Lecter, o psicopata canibal, e sua relação com a agente do FBI Clarice Starling.",
+      "preco": 69.9,
+      "image": "https://example.com/silencio_dos_inocentes.jpg",
+      "categoria": "Mistério",
+      "qtd": 6,
+      "id": 14
+    },
+    {
+      "titulo": "Orgulho e Preconceito",
+      "descricao": "O clássico de Jane Austen sobre a história de Elizabeth Bennet e seu relacionamento com Mr. Darcy.",
+      "preco": 34.9,
+      "image": "https://example.com/orgulho_e_preconceito.jpg",
+      "categoria": "Romance",
+      "qtd": 10,
+      "id": 15
+    },
+    {
+      "titulo": "O Grande Gatsby",
+      "descricao": "A história de Jay Gatsby e sua obsessão por Daisy Buchanan na década de 1920.",
+      "preco": 59.9,
+      "image": "https://example.com/grande_gatsby.jpg",
+      "categoria": "Romance",
+      "qtd": 5,
+      "id": 16
+    },
+    {
+      "titulo": "Como Eu Era Antes de Você",
+      "descricao": "Um romance emocionante sobre o relacionamento entre Louisa Clark e Will Traynor.",
+      "preco": 49.9,
+      "image": "https://example.com/como_eu_era_antes_de_voce.jpg",
+      "categoria": "Romance",
+      "qtd": 6,
+      "id": 17
+    },
+    {
+      "titulo": "A Longa Marcha",
+      "descricao": "A biografia de um dos maiores ativistas da China, Hu Jie, e sua jornada por justiça.",
+      "preco": 39.9,
+      "image": "https://example.com/longa_marcha.jpg",
+      "categoria": "Biografia",
+      "qtd": 4,
+      "id": 18
+    },
+    {
+      "titulo": "Steve Jobs",
+      "descricao": "A biografia oficial de Steve Jobs escrita por Walter Isaacson, que explora sua vida e legado.",
+      "preco": 79.9,
+      "image": "https://example.com/steve_jobs.jpg",
+      "categoria": "Biografia",
+      "qtd": 7,
+      "id": 19
+    },
+    {
+      "titulo": "Eu Sou Malala",
+      "descricao": "A história inspiradora de Malala Yousafzai, a jovem paquistanesa que lutou pelo direito à educação.",
+      "preco": 59.9,
+      "image": "https://example.com/eu_sou_malala.jpg",
+      "categoria": "Biografia",
+      "qtd": 5,
+      "id": 20
+    },
+    {
+      "titulo": "Sapiens: Uma Breve História da Humanidade",
+      "descricao": "Yuval Noah Harari explora a evolução da humanidade, desde os primeiros Homo sapiens até a era moderna.",
+      "preco": 49.9,
+      "image": "https://example.com/sapiens.jpg",
+      "categoria": "História",
+      "qtd": 6,
+      "id": 21
+    },
+    {
+      "titulo": "O Diário de Anne Frank",
+      "descricao": "O diário de uma adolescente judia durante a Segunda Guerra Mundial, vivendo na clandestinidade em Amsterdã.",
+      "preco": 29.9,
+      "image": "https://example.com/diario_anne_frank.jpg",
+      "categoria": "História",
+      "qtd": 5,
+      "id": 22
+    },
+    {
+      "titulo": "O Príncipe",
+      "descricao": "Maquiavel apresenta um guia para líderes políticos, com foco na aquisição e manutenção do poder.",
+      "preco": 19.9,
+      "image": "https://example.com/o_principe.jpg",
+      "categoria": "História",
+      "qtd": 8,
+      "id": 23
+    },
+    {
+    "titulo": "Os Homens que Não Amavam as Mulheres",
+    "descricao": "Thriller de investigação envolvendo um desaparecimento há décadas.",
+    "preco": 49.9,
+    "image": "https://example.com/os_homens.jpg",
+    "qtd": 10,
+    "id": 24,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "O Código Da Vinci",
+    "descricao": "Mistérios religiosos e simbologia em uma caça ao tesouro moderna.",
+    "preco": 44.9,
+    "image": "https://example.com/codigo_da_vinci.jpg",
+    "qtd": 12,
+    "id": 25,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "Garota Exemplar",
+    "descricao": "Thriller psicológico sobre o desaparecimento de uma esposa.",
+    "preco": 39.9,
+    "image": "https://example.com/garota_exemplar.jpg",
+    "qtd": 7,
+    "id": 26,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "Sherlock Holmes: O Cão dos Baskervilles",
+    "descricao": "O detetive Holmes investiga a maldição de uma família.",
+    "preco": 29.9,
+    "image": "https://example.com/cao_baskervilles.jpg",
+    "qtd": 9,
+    "id": 27,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "Antes de Dormir",
+    "descricao": "Uma mulher com amnésia tenta reconstruir seu passado.",
+    "preco": 38.5,
+    "image": "https://example.com/antes_de_dormir.jpg",
+    "qtd": 6,
+    "id": 28,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "Fundação",
+    "descricao": "A queda e reconstrução de um império galáctico.",
+    "preco": 54.9,
+    "image": "https://example.com/fundacao.jpg",
+    "qtd": 8,
+    "id": 29,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "Solaris",
+    "descricao": "Contatos com uma consciência alienígena em um planeta oceânico.",
+    "preco": 42.9,
+    "image": "https://example.com/solaris.jpg",
+    "qtd": 7,
+    "id": 30,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "O Conto da Aia",
+    "descricao": "Uma distopia sobre um regime totalitário que subjuga mulheres.",
+    "preco": 39.9,
+    "image": "https://example.com/conta_da_aia.jpg",
+    "qtd": 11,
+    "id": 31,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "Admirável Mundo Novo",
+    "descricao": "Uma sociedade futurista que controla seus cidadãos com condicionamento.",
+    "preco": 35.5,
+    "image": "https://example.com/admiravel_mundo_novo.jpg",
+    "qtd": 10,
+    "id": 32,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "Snow Crash",
+    "descricao": "Uma aventura no metaverso, onde hackers combatem uma nova droga virtual.",
+    "preco": 47.9,
+    "image": "https://example.com/snow_crash.jpg",
+    "qtd": 5,
+    "id": 33,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "O Livro dos Espíritos",
+    "descricao": "Base da doutrina espírita, codificado por Allan Kardec.",
+    "preco": 34.9,
+    "image": "https://example.com/livro_espiritos.jpg",
+    "qtd": 12,
+    "id": 34,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "Em Seus Passos o Que Faria Jesus?",
+    "descricao": "Reflexão cristã sobre ética e comportamento.",
+    "preco": 27.9,
+    "image": "https://example.com/jesus_passos.jpg",
+    "qtd": 8,
+    "id": 35,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "O Alcorão",
+    "descricao": "Livro sagrado do Islã com ensinamentos de Maomé.",
+    "preco": 39.9,
+    "image": "https://example.com/alcorão.jpg",
+    "qtd": 10,
+    "id": 36,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "A Cabana",
+    "descricao": "Ficção com forte conteúdo cristão sobre luto e redenção.",
+    "preco": 44.9,
+    "image": "https://example.com/cabana.jpg",
+    "qtd": 10,
+    "id": 37,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "O Propósito do Sofrimento",
+    "descricao": "Uma perspectiva cristã sobre dor e fé.",
+    "preco": 32.5,
+    "image": "https://example.com/sofrimento.jpg",
+    "qtd": 6,
+    "id": 38,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "As Aventuras de Huckleberry Finn",
+    "descricao": "Viagem por liberdade no sul dos EUA.",
+    "preco": 28.9,
+    "image": "https://example.com/huck_finn.jpg",
+    "qtd": 15,
+    "id": 39,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "A Ilha do Tesouro",
+    "descricao": "Caça ao tesouro em uma ilha pirata.",
+    "preco": 31.9,
+    "image": "https://example.com/ilha_tesouro.jpg",
+    "qtd": 10,
+    "id": 40,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "Viagem ao Centro da Terra",
+    "descricao": "Exploração subterrânea cheia de descobertas.",
+    "preco": 36.5,
+    "image": "https://example.com/centro_terra.jpg",
+    "qtd": 9,
+    "id": 41,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "20 Mil Léguas Submarinas",
+    "descricao": "O Capitão Nemo e o submarino Nautilus explorando os mares.",
+    "preco": 34.5,
+    "image": "https://example.com/20mil_leguas.jpg",
+    "qtd": 12,
+    "id": 42,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "O Conde de Monte Cristo",
+    "descricao": "Aventura, vingança e redenção na França pós-napoleônica.",
+    "preco": 58.9,
+    "image": "https://example.com/monte_cristo.jpg",
+    "qtd": 7,
+    "id": 43,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "O Nome do Vento",
+    "descricao": "A origem de Kvothe, um lendário mago e músico.",
+    "preco": 64.9,
+    "image": "https://example.com/nome_vento.jpg",
+    "qtd": 10,
+    "id": 44,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "O Hobbit",
+    "descricao": "A jornada de Bilbo Bolseiro por montanhas e dragões.",
+    "preco": 49.9,
+    "image": "https://example.com/hobbit.jpg",
+    "qtd": 13,
+    "id": 45,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "A Bússola de Ouro",
+    "descricao": "Lyra e seu daemon em uma aventura por mundos paralelos.",
+    "preco": 42.9,
+    "image": "https://example.com/bussola_ouro.jpg",
+    "qtd": 8,
+    "id": 46,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "O Último Desejo",
+    "descricao": "Contos do bruxo Geralt de Rívia, do universo The Witcher.",
+    "preco": 52.9,
+    "image": "https://example.com/ultimo_desejo.jpg",
+    "qtd": 9,
+    "id": 47,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "Eragon",
+    "descricao": "Um jovem encontra um ovo de dragão e muda o destino de seu mundo.",
+    "preco": 45.5,
+    "image": "https://example.com/eragon.jpg",
+    "qtd": 6,
+    "id": 48,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "Os Homens que Não Amavam as Mulheres",
+    "descricao": "Thriller de investigação envolvendo um desaparecimento há décadas.",
+    "preco": 49.9,
+    "image": "https://example.com/os_homens.jpg",
+    "qtd": 10,
+    "id": 24,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "O Código Da Vinci",
+    "descricao": "Mistérios religiosos e simbologia em uma caça ao tesouro moderna.",
+    "preco": 44.9,
+    "image": "https://example.com/codigo_da_vinci.jpg",
+    "qtd": 12,
+    "id": 25,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "Garota Exemplar",
+    "descricao": "Thriller psicológico sobre o desaparecimento de uma esposa.",
+    "preco": 39.9,
+    "image": "https://example.com/garota_exemplar.jpg",
+    "qtd": 7,
+    "id": 26,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "Sherlock Holmes: O Cão dos Baskervilles",
+    "descricao": "O detetive Holmes investiga a maldição de uma família.",
+    "preco": 29.9,
+    "image": "https://example.com/cao_baskervilles.jpg",
+    "qtd": 9,
+    "id": 27,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "Antes de Dormir",
+    "descricao": "Uma mulher com amnésia tenta reconstruir seu passado.",
+    "preco": 38.5,
+    "image": "https://example.com/antes_de_dormir.jpg",
+    "qtd": 6,
+    "id": 28,
+    "categoria": "Mistério"
+  },
+  {
+    "titulo": "Fundação",
+    "descricao": "A queda e reconstrução de um império galáctico.",
+    "preco": 54.9,
+    "image": "https://example.com/fundacao.jpg",
+    "qtd": 8,
+    "id": 29,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "Solaris",
+    "descricao": "Contatos com uma consciência alienígena em um planeta oceânico.",
+    "preco": 42.9,
+    "image": "https://example.com/solaris.jpg",
+    "qtd": 7,
+    "id": 30,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "O Conto da Aia",
+    "descricao": "Uma distopia sobre um regime totalitário que subjuga mulheres.",
+    "preco": 39.9,
+    "image": "https://example.com/conta_da_aia.jpg",
+    "qtd": 11,
+    "id": 31,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "Admirável Mundo Novo",
+    "descricao": "Uma sociedade futurista que controla seus cidadãos com condicionamento.",
+    "preco": 35.5,
+    "image": "https://example.com/admiravel_mundo_novo.jpg",
+    "qtd": 10,
+    "id": 32,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "Snow Crash",
+    "descricao": "Uma aventura no metaverso, onde hackers combatem uma nova droga virtual.",
+    "preco": 47.9,
+    "image": "https://example.com/snow_crash.jpg",
+    "qtd": 5,
+    "id": 33,
+    "categoria": "Ficção Científica"
+  },
+  {
+    "titulo": "O Livro dos Espíritos",
+    "descricao": "Base da doutrina espírita, codificado por Allan Kardec.",
+    "preco": 34.9,
+    "image": "https://example.com/livro_espiritos.jpg",
+    "qtd": 12,
+    "id": 34,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "Em Seus Passos o Que Faria Jesus?",
+    "descricao": "Reflexão cristã sobre ética e comportamento.",
+    "preco": 27.9,
+    "image": "https://example.com/jesus_passos.jpg",
+    "qtd": 8,
+    "id": 35,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "O Alcorão",
+    "descricao": "Livro sagrado do Islã com ensinamentos de Maomé.",
+    "preco": 39.9,
+    "image": "https://example.com/alcorão.jpg",
+    "qtd": 10,
+    "id": 36,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "A Cabana",
+    "descricao": "Ficção com forte conteúdo cristão sobre luto e redenção.",
+    "preco": 44.9,
+    "image": "https://example.com/cabana.jpg",
+    "qtd": 10,
+    "id": 37,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "O Propósito do Sofrimento",
+    "descricao": "Uma perspectiva cristã sobre dor e fé.",
+    "preco": 32.5,
+    "image": "https://example.com/sofrimento.jpg",
+    "qtd": 6,
+    "id": 38,
+    "categoria": "Religioso"
+  },
+  {
+    "titulo": "As Aventuras de Huckleberry Finn",
+    "descricao": "Viagem por liberdade no sul dos EUA.",
+    "preco": 28.9,
+    "image": "https://example.com/huck_finn.jpg",
+    "qtd": 15,
+    "id": 39,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "A Ilha do Tesouro",
+    "descricao": "Caça ao tesouro em uma ilha pirata.",
+    "preco": 31.9,
+    "image": "https://example.com/ilha_tesouro.jpg",
+    "qtd": 10,
+    "id": 40,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "Viagem ao Centro da Terra",
+    "descricao": "Exploração subterrânea cheia de descobertas.",
+    "preco": 36.5,
+    "image": "https://example.com/centro_terra.jpg",
+    "qtd": 9,
+    "id": 41,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "20 Mil Léguas Submarinas",
+    "descricao": "O Capitão Nemo e o submarino Nautilus explorando os mares.",
+    "preco": 34.5,
+    "image": "https://example.com/20mil_leguas.jpg",
+    "qtd": 12,
+    "id": 42,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "O Conde de Monte Cristo",
+    "descricao": "Aventura, vingança e redenção na França pós-napoleônica.",
+    "preco": 58.9,
+    "image": "https://example.com/monte_cristo.jpg",
+    "qtd": 7,
+    "id": 43,
+    "categoria": "Aventura"
+  },
+  {
+    "titulo": "O Nome do Vento",
+    "descricao": "A origem de Kvothe, um lendário mago e músico.",
+    "preco": 64.9,
+    "image": "https://example.com/nome_vento.jpg",
+    "qtd": 10,
+    "id": 44,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "O Hobbit",
+    "descricao": "A jornada de Bilbo Bolseiro por montanhas e dragões.",
+    "preco": 49.9,
+    "image": "https://example.com/hobbit.jpg",
+    "qtd": 13,
+    "id": 45,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "A Bússola de Ouro",
+    "descricao": "Lyra e seu daemon em uma aventura por mundos paralelos.",
+    "preco": 42.9,
+    "image": "https://example.com/bussola_ouro.jpg",
+    "qtd": 8,
+    "id": 46,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "O Último Desejo",
+    "descricao": "Contos do bruxo Geralt de Rívia, do universo The Witcher.",
+    "preco": 52.9,
+    "image": "https://example.com/ultimo_desejo.jpg",
+    "qtd": 9,
+    "id": 47,
+    "categoria": "Fantasia"
+  },
+  {
+    "titulo": "Eragon",
+    "descricao": "Um jovem encontra um ovo de dragão e muda o destino de seu mundo.",
+    "preco": 45.5,
+    "image": "https://example.com/eragon.jpg",
+    "qtd": 6,
+    "id": 48,
+    "categoria": "Fantasia"
+  }  
+  ]

@@ -1,0 +1,99 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1 style="text-align: center;">Livros Recomendados</h1>
+
+<div id="recommended-books" class="livros-container">
+    {% for livro in livros_recomendados %}
+    <div class="livro-card">
+        <h3>{{ livro.titulo }}</h3>
+        <p> {{ livro.categoria }} </p>
+        <p> - R$ {{ livro.preco|floatformat(2) }}</p>
+        <button class="btn btn-carrinho" onclick="buyBook({{ livro.id }})" >Adicionar ao carrinho</button>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+    function buyBook(livroId) {
+        const token = localStorage.getItem('access_token');
+        const userId = localStorage.getItem('user_id'); // <- você precisa salvar o user_id após o login
+
+        if (!token || !userId) {
+            alert("Você precisa estar logado para realizar uma compra.");
+            return;
+        }
+
+        const requestData = {
+            book_id: livroId,
+            user_id: userId
+        };
+    
+        fetch('http://127.0.0.1:8003/sales/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}` // Passa o token de autenticação no cabeçalho
+            },
+            body: JSON.stringify(requestData) // Envia os dados no corpo da requisição
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => { throw err });
+            }
+            return response.json();
+        })
+        .then(data => {
+            alert("Adicionado ao carrinho!");
+        })
+        .catch(error => console.error('Erro ao realizar pagamento:', error));
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const userId = localStorage.getItem("user_id");
+        if (!userId) {
+            document.getElementById("recommended-books").innerHTML = "<p style='text-align:center;'>Usuário não logado.</p>";
+            return;
+        }
+
+        fetch(`http://127.0.0.1:8003/get_cat/${userId}`)
+            .then(response => response.json())
+            .then(categories => {
+                if (categories.length === 0) {
+                    document.getElementById("recommended-books").innerHTML = "<p style='text-align:center;'>Usuário não possui histórico de compras.</p>";
+                    return;
+                }
+
+                const queryParams = categories.map(cat => `categorias=${encodeURIComponent(cat)}`).join('&');
+                fetch(`http://127.0.0.1:8002/livros_recomendacao/${userId}?${queryParams}`)
+                    .then(response => response.json())
+                    .then(livros => {
+                        const container = document.getElementById('recommended-books');
+                        container.innerHTML = "";
+                        if (livros.length === 0) {
+                            container.innerHTML = "<p style='text-align:center;'>Não há livros recomendados para suas categorias.</p>";
+                            return;
+                        }
+
+                        livros.forEach(livro => {
+                            const div = document.createElement('div');
+                            div.className = 'livro-card';
+                            div.innerHTML = `
+                                <h3>${livro.titulo}</h3>
+                                <p>${livro.categoria}</p>
+                                <p>- R$ ${parseFloat(livro.preco).toFixed(2)}</p>
+                                <button class="btn btn-carrinho" onclick="buyBook(${livro.id})">Adicionar ao carrinho</button>
+                            `;
+                            container.appendChild(div);
+                        });
+                    })
+                    .catch(error => {
+                        document.getElementById('recommended-books').innerHTML = `<p style='text-align:center;'>Erro ao carregar livros recomendados: ${error}</p>`;
+                    });
+            })
+            .catch(error => {
+                document.getElementById('recommended-books').innerHTML = `<p style='text-align:center;'>Erro ao carregar categorias: ${error}</p>`;
+            });
+    });
+</script>
+{% endblock %}

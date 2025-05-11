@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Livraria e Microsserviços</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    <style>
+        .livro-details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    {% include "partial/navbar.html" %}
+    {% block content %}{% endblock %}
+</body>
+</html>
+    

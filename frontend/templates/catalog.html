@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+<h1>Livros disponíveis</h1>
+    
+<!-- Se o usuário estiver logado, exibe o botão de pagamento -->
+
+
+<class id="livros-list">
+  {% for livro in livros %}
+      <li>
+        <h2><a href="/livros/{{ livro.id }}" class="book-title">{{ livro.titulo }}</a></h2>
+      
+        <button onclick="toggleDetails({{ livro.id }})">Mostrar Detalhes</button>
+      
+        <div id="details-{{ livro.id }}" class="livro-details hidden">
+          <p>{{ livro.descricao }}</p>
+          <p>ID: {{ livro.id }}</p>
+          <p>Categoria: {{ livro.categoria }}</p>
+          <p>Qtd em estoque: {{ livro.qtd }}</p>
+        </div>
+        <br>
+        <strong>- R${{ livro.preco | floatformat(2) }}</strong>
+        <button onclick="buyBook({{ livro.id }})">Adicionar ao carrinho</bu tton>
+      </li>
+  {% endfor %}
+</ul>
+
+<script src="{{ url_for('static', filename='js/static_catalog.js') }}"></script>
+
+{% endblock %}
