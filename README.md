@@ -6,12 +6,19 @@ Este projeto visa a estrutura de microsserviços para um website de catálogo de
 🛠️ Tecnologias Utilizadas
 
 > Python — Linguagem principal usada em todos os microsserviços.
+
 > Flask — Microframework usado no front.
+
 > FastAPI — Framework moderno para APIs com Python.
+
 > JWT(Json Web Token) — Autenticação e autorização.
+
 > Uvicorn — Servidor ASGI rápido para FastAPI.
+
 > Jinja2 — Template engine com Flask.
+
 > SQLAlchemy — ORM para interação com banco de dados.
+
 > SQLite — Banco de dados relacional leve, usado localmente durante o desenvolvimento.
 
 📄 Descrição do Projeto
