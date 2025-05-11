@@ -57,7 +57,7 @@ Recomenda-se usar um ambiente virtual do python usando o python: `python3 -m ven
 Como o banco de dados já está no github. É possível entrar usando as seguintes credenciais:
 
 **Usuário admin:**
-- Username: Admin
+- Username: admin
 - Password: 123456
 
 **Usuário comum:**
