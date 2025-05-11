@@ -52,3 +52,14 @@ Recomenda-se usar um ambiente virtual do python usando o python: `python3 -m ven
    
   b. Para os outros serviços, em cada terminal, acesse as pastas: `payment`, `catalog`, `sale`, e execute: `python main.py` em cada terminal.
 
+⚙️ Informações úteis:
+
+Como o banco de dados já está no github. É possível entrar usando as seguintes credenciais:
+
+**Usuário admin:**
+- Username: Admin
+- Password: 123456
+
+**Usuário comum:**
+- Username: Jorge
+- Password: 1234
