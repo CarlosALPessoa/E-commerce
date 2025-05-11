@@ -45,6 +45,7 @@ Recomenda-se usar um ambiente virtual do python usando o python: `python3 -m ven
 > pip install -r requirements.txt
 
 3. Cada microsserviço precisará de um terminal específico. Podem ser inicializado seguindo os seguintes passos:
+
   a. User_auth e Front-end:
 
    Use um terminal para cada um dos microsserviços, entre na pasta `user_auth`, `frontend`, e execute: `python app.py`
