@@ -62,3 +62,14 @@ def recomenda():
 @router.route("/admin/livros")
 def pagina_admin():
     return render_template("admin/livros.html")
+
+@router.route("/configuracao", methods=["GET"])
+def mostrar_configuracao():
+    features = session.get("features", [])
+    return render_template("admin/configuracao.html", features=features)
+
+@router.route("/configurar_features", methods=["POST"])
+def configurar_features():
+    selecionadas = request.form.getlist("features")
+    session["features"] = selecionadas
+    return redirect("/configuracao")

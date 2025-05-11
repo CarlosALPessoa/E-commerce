@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, session
 
 import requests
 
@@ -39,9 +39,10 @@ def index():
 
         return render_template(
             "cart.html",
-            order_id = data["id"],
-            items = data["items"],
-            total=data["total"]
+            order_id=data["id"],
+            items=data["items"],
+            total=data["total"],
+            features=session.get("features", [])  # <- aqui
         )
     
     except Exception as e:

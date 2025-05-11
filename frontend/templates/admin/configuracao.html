@@ -1,0 +1,45 @@
+{% extends "main.html" %}
+{% block content %}
+
+<form method="POST" action="/configurar_features">
+  <h3>Configurações de Features</h3>
+
+  <label><input type="checkbox" name="features" value="pix"
+    {% if 'pix' in features %}checked{% endif %}> Pix</label><br>
+
+  <label><input type="checkbox" name="features" value="boleto"
+    {% if 'boleto' in features %}checked{% endif %}> Boleto</label><br>
+
+  <label><input type="checkbox" name="features" value="cartao"
+    {% if 'cartao' in features %}checked{% endif %}> Cartão de Crédito</label><br>
+
+  <!-- <label><input type="checkbox" name="features" value="avaliacoes"
+    {% if 'avaliacoes' in features %}checked{% endif %}> Mostrar Avaliações</label><br> !--> 
+
+  <label><input type="checkbox" name="features" value="recomendacoes"
+    {% if 'recomendacoes' in features %}checked{% endif %}> Mostrar Recomendações</label><br>
+
+  <button type="submit">Salvar</button>
+</form>
+
+<script>
+  document.getElementById('configForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previne o envio normal do formulário
+
+    var formData = new FormData(this); // Coleta os dados do formulário
+
+    fetch('/configurar_features', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json()) // Assume que a resposta é um JSON
+    .then(data => {
+      alert('Configurações salvas com sucesso!');
+    })
+    .catch(error => {
+      console.error('Erro:', error);
+    });
+  });
+</script>
+
+{%endblock%}

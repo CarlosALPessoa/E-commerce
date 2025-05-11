@@ -26,21 +26,24 @@
 
     <!-- Caixa de Pagamento -->
     <div class="checkout-box">
-        <form onsubmit="enviarPagamento(event)">
-            <label for="forma_pagamento"><strong>Forma de Pagamento:</strong></label><br>
-            <select id="forma_pagamento" name="forma_pagamento" required>
+    <form onsubmit="enviarPagamento(event)">
+        <label for="forma_pagamento"><strong>Forma de Pagamento:</strong></label><br>
+        <select id="forma_pagamento" name="forma_pagamento" required>
+            {% if 'cartao' in session.features %}
                 <option value="cartao">Cartão de Crédito</option>
+            {% endif %}
+            {% if 'boleto' in session.features %}
                 <option value="boleto">Boleto</option>
+            {% endif %}
+            {% if 'pix' in session.features %}
                 <option value="pix">PIX</option>
-            </select><br><br>
+            {% endif %}
+        </select><br><br>
 
-            <div class="checkout-total">
-                <strong>Total:</strong> R$ {{ total | floatformat(2) }}
-            </div><br>
+        <button type="submit">Fazer Pagamento</button>
+    </form>
+</div>
 
-            <button type="submit">Fazer Pagamento</button>
-        </form>
-    </div>
 </div>
 
 <script src="{{ url_for('static', filename='js/js_order.js')}}"></script>

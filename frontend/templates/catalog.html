@@ -23,6 +23,9 @@
         <br>
         <strong>- R${{ livro.preco | floatformat(2) }}</strong>
         <button onclick="buyBook({{ livro.id }})">Adicionar ao carrinho</bu tton>
+          {% if 'avaliacoes' in session.features %}
+            <!-- Mostrar avaliações -->
+          {% endif %}
       </li>
   {% endfor %}
 </ul>

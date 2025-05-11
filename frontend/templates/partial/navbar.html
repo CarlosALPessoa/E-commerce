@@ -33,11 +33,13 @@
   <nav class="navbar">
     <div class="logo"><h1>Livraria e Microsserviços</h1></div>
     <ul>
-      <li><a href="/recomenda">Livros Recomendados</a></li>
+      {% if 'recomendacoes' in session.get('features', []) %}
+        <li><a href="/recomenda">Livros Recomendados</a></li>
+      {% endif %}
       <li><a href="/">Catálogo</a></li>
       <li><a href="/carrinho" id="carrinho-link">Carrinho</a></li>
       <li><a href="/orders" id="order-link">Pedidos</a></li>
-      <!-- <li><a href="/configuracao">Configuração</a></li> -->
+      <li><a href="/configuracao">Configuração</a></li>
       <li><a id="admin-link" style="display:none;" href="/admin/livros">Admin</a></li>
       <li id="welcome-msg"></li>
       <li id="auth-buttons"></li>
